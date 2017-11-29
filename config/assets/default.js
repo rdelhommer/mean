@@ -38,10 +38,8 @@ module.exports = {
       'modules/*/client/scss/*.scss'
     ],
     js: [
-      'modules/core/client/app/config.js',
-      'modules/core/client/app/init.js',
-      'modules/*/client/*.js',
-      'modules/*/client/**/*.js'
+      'public/js/modules/*.js',
+      'public/js/**/*.js'
     ],
     img: [
       'modules/**/*/img/**/*.jpg',
@@ -50,6 +48,11 @@ module.exports = {
       'modules/**/*/img/**/*.svg'
     ],
     views: ['modules/*/client/views/**/*.html'],
+    publicViews: {
+      core: ['public/templates/core/**/*.html'],
+      apps: ['public/templates/apps/**/*.html'],
+      directives: ['public/templates/directives/**/*.html']
+    },
     templates: ['build/templates.js']
   },
   server: {
